@@ -8,7 +8,8 @@ import logging
 from logging import Formatter, FileHandler
 from forms import *
 import os
-
+from random import randint
+from flask_cors import CORS
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
@@ -97,9 +98,7 @@ if not app.debug:
 
 # Default port:
 # -*- coding: utf-8 -*- 
-from flask import Flask, request 
-from random import randint
-from flask_cors import CORS
+
 
 def randomLine(line):
   return line[randint(0, len(line)-1)]
