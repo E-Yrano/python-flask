@@ -9,7 +9,7 @@ from logging import Formatter, FileHandler
 from forms import *
 import os
 from random import randint
-from flask_cors import CORS
+# from flask_cors import CORS
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
@@ -340,7 +340,7 @@ def randBody(Name):
 
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 @app.route('/', methods = ['GET','POST'])
 def start():
